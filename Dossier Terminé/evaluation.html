@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Évaluation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <main>
+    <section>
+      <header>
+        <!-- Load an icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Navigation Bar-->
+        <nav>
+          <ul>
+              <li><a href="trombinoscope.html">Trombinoscope</a></li>
+              <li><a href="evaluation.html">Evaluation</a></li>
+              <li><a href="meteo.php">Météo</a></li>
+          </ul>
+      </nav>
+      </header>
+      
+      <footer>
+          <form method="POST" action="traitement.php">
+            <fieldset>
+              <h4>Les compétences du titre</h4>
+              <p></p>Maquetter une application : 
+              <input type="radio" name="maquette" value="réalisé">Réalisé
+              <input type="radio" name="maquette" value="non_réalisé">Non réalisé</p>
+              <p>Réaliser une interface utilisateur Web statique et adaptable : 
+              <input type="radio" name="statique" value="réalisé">Réalisé
+              <input type="radio" name="statique" value="non_réalisé">Non réalisé</p>
+              <p>Développer une interface utilisateur Web dynamique : 
+              <input type="radio" name="dynamique" value="réalisé">Réalisé
+              <input type="radio" name="dynamique" value="non_réalisé">Non réalisé</p>
+              <p>Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce : 
+              <input type="radio" name="interface" value="réalisé">Réalisé
+              <input type="radio" name="interface" value="non_réalisé">Non réalisé</p>
+              <p>Créer une base de données : 
+              <input type="radio" name="bd" value="réalisé">Réalisé
+              <input type="radio" name="bd" value="non_réalisé">Non réalisé</p>
+              <p>Développer les composants d'accès aux données : 
+              <input type="radio" name="composants" value="réalisé">Réalisé
+              <input type="radio" name="composants" value="non_réalisé">Non réalisé</p>
+              <p>Développer la partie backend d'une application Web ou Web mobile : 
+              <input type="radio" name="backend" value="réalisé">Réalisé
+              <input type="radio" name="backend" value="non_réalisé">Non réalisé</p>
+              <p>Élaborer et mettre en  oeuvre des composants dans une application de gestion de contenu ou e-commerce : 
+              <input type="radio" name="mes" value="réalisé">Réalisé
+              <input type="radio" name="mes" value="non_réalisé">Non réalisé</p>
+              </fieldset>
+            
+            <fieldset>
+              <h4>Observations</h4>
+              <p><textarea name="observations" rows="5" cols="60" value="Vos remarques ici..." onFocus="if(this.value=='Vos remarques ici...')this.value=''">Vos remarques ici...</textarea></p>
+            </fieldset>
+            <p>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Réinitialiser">
+            </p>
+          </form>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

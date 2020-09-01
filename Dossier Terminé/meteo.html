@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Météo intérieure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <main>
+  
+      <header>
+            <!--<input type="image" id="soleil" alt="Soleil" src="soleil.png">
+            <input type="image" id="nuage" alt="Soleil" src="nuage.png">
+            <input type="image" id="eclair" alt="Eclair" src="eclair.png">-->
+      </header>
+      <nav>
+        <ul>
+            <li><a href="trombinoscope.html">Trombinoscope</a></li>
+            <li><a href="evaluation.html">Evaluation</a></li>
+            <li><a href="meteo.html">Météo</a></li>
+        </ul>
+    </nav>
+            <h4>Aujourd'hui, tu serais plutôt...</h4>
+
+            <form action="meteo.php" id="form">
+
+            <article>
+    				<figure>
+                        <div class=zoom> <!--rajout Div Class Zoom et image avant l image-->
+                          <div class=image> <!--rajout-->
+                          <img src="soleil.png" alt="Soleil" class="imgClickable">
+                          </div>
+                        </div>  
+    					<figcaption>
+    						Tout le monde il est beau, tout le monde il est gentil. 
+    					</figcaption>
+                    </figure>
+                    <figure>
+                        <div class=zoom> <!--rajout Div Class Zoom zt image avant l image-->
+                          <div class=image> <!--rajout-->
+                          <img src="nuage.png" alt="Nuage" class="imgClickable">
+                          </div>
+                        </div>
+                        <figcaption>
+                            Neutre comme la Suisse.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class=zoom> <!--rajout Div Class Zoom zt image avant l image-->
+                          <div class=image> <!--rajout-->
+                          <img src="pluie.png" alt="Pluie" class="imgClickable">
+                          </div>
+                         </div> 
+                        <figcaption>
+                            En manque de câlins.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class=zoom> <!--rajout Div Class Zoom zt image avant l image-->
+                          <div class=image> <!--rajout-->
+                          <img src="eclair.png" alt="Eclair" class="imgClickable">
+                          </div>
+                         </div> 
+                        <figcaption>
+                            Prêt à affronter Rocky.
+                        </figcaption>
+                    </figure>
+                <input type="hidden" name="imgClike" value="" id="imgClike">
+            </article>
+            <section>
+              <aside>
+              <a href ="http://www.meteofrance.com/previsions-meteo-plages/nice/06000"><img  class="cartedep" alt="cartedepartem" src="departement06.png"></a>
+              </aside>
+              <aside>
+              <p class="webcam">
+              <iframe src="https://platforms5.joada.net/embeded/embeded.html?uuid=35cf5b2a-f153-411c-3637-3330-6d61-63-ac70-d2532511ae26d&amp;type=vod&amp;liveicon=0&amp;vsheader=1&amp;titletext=viewsurf.com&amp;tsp=1574686866&amp;tz=Europe%2FParis&amp;autoplay=1&amp;loop=1" allow="autoplay; fullscreen" allowfullscreen="" class="player-viewsurf"></iframe>
+              </p>
+              </aside>
+            </section>
+          <script>
+              var imgs = document.getElementsByClassName('imgClickable');
+              for (var i = 0; i < imgs.length; i++) {
+                  imgs[i].addEventListener("click", function(){
+                      document.getElementById("imgClike").value = this.getAttribute("alt");
+                      document.getElementById("form").submit(); 
+                  });
+              }
+          </script>
+      </form>
+      <footer></footer>
+      </header>
+      <footer></footer>
+    </section>
+  </main>
+</body>
+</html>
